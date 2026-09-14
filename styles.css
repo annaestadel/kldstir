@@ -198,8 +198,15 @@ h2 {
   white-space: nowrap;
 }
 
-.header__cta,
-.header__home {
+a.btn.header__cta {
+  display: inline-flex;
+}
+
+a.btn.header__home {
+  display: none;
+}
+
+.cta-short {
   display: none;
 }
 
@@ -1060,8 +1067,8 @@ a[href] {
     display: flex;
   }
 
-  .header__cta,
-  .header__home {
+  a.btn.header__cta,
+  a.btn.header__home {
     display: inline-flex;
   }
 
@@ -1093,9 +1100,177 @@ a[href] {
   }
 }
 
+@media (max-width: 1023px) {
+  .brand__rest {
+    display: none;
+  }
+
+  .header__phone-mobile {
+    display: none !important;
+  }
+
+  a.btn.header__cta {
+    min-height: 40px;
+    padding: 0 12px;
+    font-size: 13px;
+    flex: 0 0 auto;
+    box-shadow: none;
+  }
+
+  .cta-full {
+    display: none;
+  }
+
+  .cta-short {
+    display: inline;
+  }
+
+  .header {
+    --header-h: 58px;
+  }
+
+  .header__inner {
+    min-height: 58px;
+    gap: 8px;
+  }
+
+  .brand__mark {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+  }
+
+  .brand__title {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  .brand__sub {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 767px) {
   :root {
     --dock-h: 64px;
+  }
+
+  .container {
+    width: min(1180px, calc(100% - 24px));
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section__head {
+    margin-bottom: 16px;
+    gap: 6px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .card {
+    padding: 14px 16px;
+    border-radius: 14px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+    margin: 4px 0;
+  }
+
+  .hero__stage {
+    min-height: 0;
+  }
+
+  .hero__content {
+    padding: 24px 0 20px;
+    gap: 16px;
+  }
+
+  .hero__copy h1,
+  .hero__copy .eyebrow + h1 {
+    font-size: clamp(26px, 8vw, 34px);
+  }
+
+  .hero__actions {
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .hero__actions .btn {
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  .hero-stats {
+    gap: 8px;
+  }
+
+  .hero-stats div {
+    padding: 10px 12px 12px;
+  }
+
+  .hero-stats b {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  .hero-stats span {
+    font-size: 11px;
+  }
+
+  .fault .btn {
+    min-height: 42px;
+    font-size: 13px;
+    padding: 0 12px;
+  }
+
+  .fault__meta {
+    font-size: 13px;
+  }
+
+  .price-row {
+    padding: 12px 14px;
+  }
+
+  .price-row b {
+    font-size: 18px;
+  }
+
+  .step {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .step__n {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .section-photo {
+    margin-bottom: 16px;
+  }
+
+  .section-photo img {
+    aspect-ratio: 2 / 1;
+    max-height: 140px;
+  }
+
+  .faq__q {
+    min-height: 48px;
+    padding: 12px 14px;
+  }
+
+  .lead-box {
+    padding: 18px 16px;
+    border-radius: 18px;
   }
 
   .dock {
@@ -1138,19 +1313,6 @@ a[href] {
 
   .hero__photo {
     object-position: 50% 45%;
-  }
-
-  .hero__stage {
-    min-height: 640px;
-  }
-
-  .header__phone-mobile {
-    display: block;
-    margin-left: auto;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 13px;
-    white-space: nowrap;
   }
 }
 
