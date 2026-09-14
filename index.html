@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,650;1,9..144,500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20" />
+  <link rel="stylesheet" href="styles.css?v=21" />
 </head>
 <body>
   <a class="skip" href="#main">К содержанию</a>
@@ -77,10 +77,10 @@
             </div>
           </div>
           <div class="hero-stats">
-            <div><b>Выезд в день обращения</b><span>Заявки без выходных</span></div>
-            <div><b>Гарантия на работу</b><span>На согласованный ремонт</span></div>
-            <div><b>Цена до ремонта</b><span>Сначала согласование</span></div>
-            <div><b>Город и область</b><span>Калининград и район</span></div>
+            <div><b>Выезд в день обращения</b></div>
+            <div><b>Гарантия на работу</b></div>
+            <div><b>Цена до ремонта</b></div>
+            <div><b>Город и область</b></div>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
               <span>Признак: программа стоит, вода в баке.</span>
               <span>Часто: засор, фильтр, помпа.</span>
             </div>
-            <button class="btn btn--outline" type="button" data-issue="Не сливает воду">Заявка по этой поломке</button>
+            <button class="btn btn--amber fault__cta" type="button" data-issue="Не сливает воду">Заявка по этой поломке</button>
           </article>
           <article class="card fault">
             <h3>Не отжимает</h3>
@@ -147,7 +147,7 @@
               <span>Признак: вещи мокрые, барабан крутится слабо.</span>
               <span>Часто: щётки, двигатель, прессостат.</span>
             </div>
-            <button class="btn btn--outline" type="button" data-issue="Не отжимает">Заявка по этой поломке</button>
+            <button class="btn btn--amber fault__cta" type="button" data-issue="Не отжимает">Заявка по этой поломке</button>
           </article>
           <article class="card fault">
             <h3>Не греет воду</h3>
@@ -155,7 +155,7 @@
               <span>Признак: стирка холодная, цикл странно долгий.</span>
               <span>Часто: ТЭН, датчик температуры.</span>
             </div>
-            <button class="btn btn--outline" type="button" data-issue="Не греет воду">Заявка по этой поломке</button>
+            <button class="btn btn--amber fault__cta" type="button" data-issue="Не греет воду">Заявка по этой поломке</button>
           </article>
           <article class="card fault">
             <h3>Течёт</h3>
@@ -163,7 +163,7 @@
               <span>Признак: лужа под машинкой, течёт от люка.</span>
               <span>Часто: манжета, патрубки, дозатор.</span>
             </div>
-            <button class="btn btn--outline" type="button" data-issue="Течёт стиральная машина">Заявка по этой поломке</button>
+            <button class="btn btn--amber fault__cta" type="button" data-issue="Течёт стиральная машина">Заявка по этой поломке</button>
           </article>
           <article class="card fault">
             <h3>Ошибка на дисплее</h3>
@@ -171,7 +171,7 @@
               <span>Признак: код ошибки, мигает индикация.</span>
               <span>Часто: модуль, датчики, замок люка.</span>
             </div>
-            <button class="btn btn--outline" type="button" data-issue="Ошибка на дисплее">Заявка по этой поломке</button>
+            <button class="btn btn--amber fault__cta" type="button" data-issue="Ошибка на дисплее">Заявка по этой поломке</button>
           </article>
           <article class="card fault">
             <h3>Прыгает и шумит</h3>
@@ -179,7 +179,7 @@
               <span>Признак: сильная вибрация на отжиме.</span>
               <span>Часто: амортизаторы, пружины, подшипники.</span>
             </div>
-            <button class="btn btn--outline" type="button" data-issue="Прыгает и сильно шумит">Заявка по этой поломке</button>
+            <button class="btn btn--amber fault__cta" type="button" data-issue="Прыгает и сильно шумит">Заявка по этой поломке</button>
           </article>
           <article class="card fault">
             <h3>Не включается</h3>
@@ -187,7 +187,7 @@
               <span>Признак: нет реакции на кнопки, нет индикации.</span>
               <span>Часто: сеть, шнур, модуль, УБЛ.</span>
             </div>
-            <button class="btn btn--outline" type="button" data-issue="Не включается">Заявка по этой поломке</button>
+            <button class="btn btn--amber fault__cta" type="button" data-issue="Не включается">Заявка по этой поломке</button>
           </article>
           <article class="card fault">
             <h3>Не набирает воду</h3>
@@ -195,7 +195,7 @@
               <span>Признак: стирка не стартует, бак пустой.</span>
               <span>Часто: заливной клапан, шланг, прессостат.</span>
             </div>
-            <button class="btn btn--outline" type="button" data-issue="Не набирает воду">Заявка по этой поломке</button>
+            <button class="btn btn--amber fault__cta" type="button" data-issue="Не набирает воду">Заявка по этой поломке</button>
           </article>
           <article class="card fault">
             <h3>Не крутит барабан</h3>
@@ -203,7 +203,7 @@
               <span>Признак: вода набралась, барабан стоит.</span>
               <span>Часто: ремень, двигатель, электроника.</span>
             </div>
-            <button class="btn btn--outline" type="button" data-issue="Не крутит барабан">Заявка по этой поломке</button>
+            <button class="btn btn--amber fault__cta" type="button" data-issue="Не крутит барабан">Заявка по этой поломке</button>
           </article>
         </div>
       </div>
@@ -269,29 +269,6 @@
               <h3>Проверка</h3>
               <p>Собираю, запускаю тестовый цикл, объясняю, что было и как пользоваться дальше.</p>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="cases">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Типовые ситуации</p>
-          <h2>С чем чаще всего приезжаю</h2>
-        </div>
-        <div class="cases">
-          <article class="card">
-            <h3>Вода осталась в баке</h3>
-            <p>Чаще всего забит фильтр или улитка помпы. Чистка или замена насоса — и программа снова доходит до конца.</p>
-          </article>
-          <article class="card">
-            <h3>Стирка ледяной водой</h3>
-            <p>ТЭН или датчик. После замены проверяю нагрев на короткой программе, чтобы не уехать «на авось».</p>
-          </article>
-          <article class="card">
-            <h3>Машинка «ходит» по полу</h3>
-            <p>Износ амортизаторов или перегруз. Ставлю новые стойки, проверяю установку по уровню.</p>
           </article>
         </div>
       </div>
@@ -453,36 +430,38 @@
     <section class="section section--alt" id="lead">
       <div class="container">
         <div class="lead-box">
-          <div>
+          <div class="lead-box__copy">
             <p class="eyebrow">Связь</p>
             <h2>Оставить заявку</h2>
-            <p class="lead" style="color:#d5e2f2;margin-top:10px">Форма открывает WhatsApp с готовым текстом. Можно сразу позвонить, написать в Макс или отправить SMS.</p>
-            <div class="alt-contacts" style="margin-top:18px">
-              <a class="btn btn--light" data-tel href="tel:+79062345277">Позвонить</a>
-              <a class="btn btn--wa" data-wa href="#">WhatsApp</a>
-              <a class="btn btn--max" data-max href="#">Написать в Макс</a>
-              <a class="btn btn--sms" data-sms href="#">Сообщение на телефон</a>
+            <p class="lead">Форма открывает WhatsApp с готовым текстом. Можно сразу позвонить или написать.</p>
+            <div class="alt-contacts">
+              <a class="alt-link" data-tel href="tel:+79062345277">Позвонить</a>
+              <a class="alt-link alt-link--wa" data-wa href="#">WhatsApp</a>
+              <a class="alt-link alt-link--max" data-max href="#">Макс</a>
+              <a class="alt-link alt-link--sms" data-sms href="#">SMS</a>
             </div>
           </div>
           <form class="form" id="lead-form" novalidate>
-            <label>
-              Имя
-              <input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" />
-            </label>
-            <label>
-              Телефон
-              <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+7 9xx xxx-xx-xx" />
-            </label>
+            <div class="form__row">
+              <label>
+                Имя
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" />
+              </label>
+              <label>
+                Телефон
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+7 9xx xxx-xx-xx" />
+              </label>
+            </div>
             <label>
               Что случилось
-              <textarea id="issue" name="issue" placeholder="Например: не сливает, Bosch, Калининград"></textarea>
+              <textarea id="issue" name="issue" rows="3" placeholder="Например: не сливает, Bosch, Калининград"></textarea>
             </label>
             <label class="check">
               <input id="pdn-consent" type="checkbox" />
-              <span>Согласен(а) на обработку персональных данных. Текст политики — на странице <a href="privacy.html">«Политика конфиденциальности»</a>.</span>
+              <span>Согласен(а) на обработку данных. <a href="privacy.html">Политика конфиденциальности</a></span>
             </label>
             <p class="form__error" hidden></p>
-            <button class="btn btn--amber" type="submit">Отправить в WhatsApp</button>
+            <button class="btn btn--amber form__submit" type="submit">Отправить в WhatsApp</button>
           </form>
         </div>
       </div>
