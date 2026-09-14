@@ -1225,37 +1225,58 @@ a[href] {
   }
 
   .hero__content {
-    padding: 24px 0 20px;
-    gap: 16px;
+    padding: 28px 0 36px;
+    gap: 14px;
+  }
+
+  .hero__copy .eyebrow {
+    display: none;
+  }
+
+  .hero__place {
+    display: none;
   }
 
   .hero__copy h1,
   .hero__copy .eyebrow + h1 {
-    font-size: clamp(26px, 8vw, 34px);
+    font-size: clamp(24px, 7.2vw, 30px);
   }
 
   .hero__actions {
-    margin-top: 16px;
+    margin-top: 14px;
     gap: 8px;
   }
 
   .hero__actions .btn {
     min-height: 44px;
-    padding: 0 14px;
+    padding: 0 16px;
     font-size: 14px;
   }
 
+  .hero__actions .btn--ghost,
+  .hero__actions .btn--wa {
+    display: none;
+  }
+
   .hero-stats {
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .hero-stats div {
-    padding: 10px 12px 12px;
+    flex: 0 0 auto;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border-left-width: 0;
+    border: 1px solid rgba(255, 255, 255, 0.16);
   }
 
   .hero-stats b {
-    font-size: 15px;
-    line-height: 1.2;
+    font-family: Manrope, system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
   }
 
   .fault .btn {
